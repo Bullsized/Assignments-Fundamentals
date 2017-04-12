@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 Notifications", "06 Noti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 Numbers to Words", "07 Numbers to Words\07 Numbers to Words.csproj", "{1C657285-5EC3-4625-9061-A31AFFF6B7EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08 String Encryption", "08 String Encryption\08 String Encryption.csproj", "{6E049F51-D472-4D97-843B-72AB47FCECAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1C657285-5EC3-4625-9061-A31AFFF6B7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C657285-5EC3-4625-9061-A31AFFF6B7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C657285-5EC3-4625-9061-A31AFFF6B7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E049F51-D472-4D97-843B-72AB47FCECAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E049F51-D472-4D97-843B-72AB47FCECAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E049F51-D472-4D97-843B-72AB47FCECAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E049F51-D472-4D97-843B-72AB47FCECAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
