@@ -49,7 +49,7 @@ namespace _04_Split_by_Word_Casing
         {          
             foreach (char letter in upper)
             {
-                if (letter <= 'A' && letter >= 'Z')
+                if (letter < 'A' || letter > 'Z')
                 {
                     return false;
                 }
@@ -61,7 +61,7 @@ namespace _04_Split_by_Word_Casing
         {
             foreach (char letter in lower)
             {
-                if (letter <= 'a' && letter >= 'z')
+                if (letter < 'a' || letter > 'z')
                 {
                     return false;
                 }
