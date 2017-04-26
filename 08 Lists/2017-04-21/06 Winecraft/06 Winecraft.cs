@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _06_Winecraft
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             List<int> grapeList = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
             int growthDays = int.Parse(Console.ReadLine());
@@ -17,30 +15,64 @@ namespace _06_Winecraft
             {
                 for (int rows = 0; rows < growthDays; rows++)
                 {
-                    for (int columns = 0; columns < grapeList.Count; columns++)
-                    {
-                        if (grapeList[columns] <= 0)
-                        {
-                            grapeList.RemoveAt(columns);
-                            columns--;
-                        }
-                        else if (1 <= columns && columns <= grapeList.Count - 2
-                            && grapeList[columns] > grapeList[columns - 1]
-                            && grapeList[columns] > grapeList[columns + 1])
-                        {
-                            grapeList[columns] += 2;
-                            grapeList[columns - 1] -= 2;
-                            grapeList[columns + 1] -= 1;
-                            columns++;
-                        }
-                        else
-                        {
-                            grapeList[columns]++;
-                        }
-                    }
+                    AddingOne(grapeList);
+                    IncreasingOne(grapeList, growthDays);
+                }
+
+                RemoveGrapes(grapeList, growthDays);
+            }
+
+            Console.WriteLine(string.Join(" ", grapeList));
+        }
+
+        private static List<int> RemoveGrapes(List<int> grapeList, int growthDays)
+        {
+            for (int zeroCheck = 0; zeroCheck < grapeList.Count; zeroCheck++)
+            {
+                if (grapeList[zeroCheck] <= growthDays)
+                {
+                    grapeList.RemoveAt(zeroCheck);
                 }
             }
-            Console.WriteLine(string.Join(" ", grapeList));
+
+            return grapeList;
+        }
+
+        private static List<int> IncreasingOne(List<int> grapeList, int growthDays)
+        {
+            for (int cols = 1; cols < grapeList.Count - 1; cols++)
+            {
+                if (grapeList[cols] > grapeList[cols - 1] && grapeList[cols] > grapeList[cols + 1])
+                {
+                    if (grapeList[cols - 1] > 0)
+                    {
+                        grapeList[cols]++;
+                        grapeList[cols - 1] -= 2;
+                    }
+
+                    if (grapeList[cols + 1] > 0)
+                    {
+                        grapeList[cols + 1] -= 2;
+                    }
+
+                    cols++;
+                }
+            }
+
+            return grapeList;
+        }
+
+        private static List<int> AddingOne(List<int> grapeList)
+        {
+            for (int i = 0; i < grapeList.Count; i++)
+            {
+                if (grapeList[i] > 0)
+                {
+                    grapeList[i]++;
+                }
+            }
+
+            return grapeList;
         }
     }
 }
