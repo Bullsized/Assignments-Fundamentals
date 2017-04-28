@@ -71,3 +71,4 @@ namespace _03_Increasing_Crisis
         }
     }
 }
+//absurd task!
