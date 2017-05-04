@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 Shellbound", "01 Shellbound\01 Shellbound.csproj", "{A96B775C-344B-42B9-AFE7-3741067D3DB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Dict-Ref-Advanced", "02 Dict-Ref-Advanced\02 Dict-Ref-Advanced.csproj", "{7B9C94C1-76B8-4F53-8239-80BB79E01004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A96B775C-344B-42B9-AFE7-3741067D3DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A96B775C-344B-42B9-AFE7-3741067D3DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A96B775C-344B-42B9-AFE7-3741067D3DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B9C94C1-76B8-4F53-8239-80BB79E01004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9C94C1-76B8-4F53-8239-80BB79E01004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9C94C1-76B8-4F53-8239-80BB79E01004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9C94C1-76B8-4F53-8239-80BB79E01004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -51,7 +51,7 @@ namespace _01_Shellbound
 
                 Console.Write($"{region.Key} -> ");
 
-                Console.WriteLine($" {string.Join(", ", region.Value)} ({giantShell})");
+                Console.WriteLine($"{string.Join(", ", region.Value)} ({giantShell})");
             }
         }
     }
