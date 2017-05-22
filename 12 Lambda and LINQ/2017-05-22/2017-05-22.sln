@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 SMMAverage", "01 SMMAver
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Largest 3 Nums", "02 Largest 3 Nums\02 Largest 3 Nums.csproj", "{49BBDAC4-3568-444B-878A-62E0409004F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 SWSorted", "03 SWSorted\03 SWSorted.csproj", "{671D5B0B-B351-4E73-B4A9-EDF45D23D1D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 Fold and Sum", "04 Fold and Sum\04 Fold and Sum.csproj", "{5C7FDAA9-3072-4386-965F-EEE14D0B12C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{49BBDAC4-3568-444B-878A-62E0409004F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49BBDAC4-3568-444B-878A-62E0409004F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49BBDAC4-3568-444B-878A-62E0409004F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671D5B0B-B351-4E73-B4A9-EDF45D23D1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671D5B0B-B351-4E73-B4A9-EDF45D23D1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671D5B0B-B351-4E73-B4A9-EDF45D23D1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671D5B0B-B351-4E73-B4A9-EDF45D23D1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7FDAA9-3072-4386-965F-EEE14D0B12C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7FDAA9-3072-4386-965F-EEE14D0B12C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7FDAA9-3072-4386-965F-EEE14D0B12C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7FDAA9-3072-4386-965F-EEE14D0B12C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

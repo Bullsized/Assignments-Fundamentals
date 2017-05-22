@@ -15,8 +15,10 @@ namespace _02_Largest_3_Nums
                 .Select(int.Parse)
                 .ToList();
 
-            var firstDigitsList = largestList.OrderByDescending(x => x)
-                .Take(3);
+            var firstDigitsList = largestList
+                .OrderByDescending(x => x)
+                .Take(3)
+                .ToList();
 
             Console.WriteLine(string.Join(" ", firstDigitsList));
         }
