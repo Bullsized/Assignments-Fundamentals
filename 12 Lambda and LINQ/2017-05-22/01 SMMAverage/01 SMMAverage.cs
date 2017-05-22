@@ -10,6 +10,23 @@ namespace _01_SMMAverage
     {
         static void Main(string[] args)
         {
+            int limit = int.Parse(Console.ReadLine());
+
+            List<int> workingList = new List<int>();
+
+            int digitToAdd = 0;
+
+            for (int cycle = 0; cycle < limit; cycle++)
+            {
+                digitToAdd = int.Parse(Console.ReadLine());
+
+                workingList.Add(digitToAdd);
+            }
+
+            Console.WriteLine($"Sum = {workingList.Sum()}");
+            Console.WriteLine($"Min = {workingList.Min()}");
+            Console.WriteLine($"Max = {workingList.Max()}");
+            Console.WriteLine($"Average = {workingList.Average()}");
         }
     }
 }
