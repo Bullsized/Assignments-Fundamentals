@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,16 +14,14 @@ namespace _01_Registered_Users
             Dictionary<string, DateTime> registeredUsernames = new Dictionary<string, DateTime>();
 
             string inputLine = Console.ReadLine();
-
-            //  .Split(new char[] { ' ', '-', '>' }, StringSplitOptions.RemoveEmptyEntries)
-            //  .ToList();
+        
             while (inputLine != "end")
             {
                 string[] inputParams = inputLine
                     .Split(new char[] { ' ', '-', '>' }, StringSplitOptions.RemoveEmptyEntries);
 
                 string username = inputParams[0];
-                DateTime registryDate = DateTime.Parse(inputParams[1]);
+                DateTime registryDate = DateTime.ParseExact(inputParams[1], "dd/MM/yyyy", CultureInfo.InvariantCulture);
 
                 registeredUsernames.Add(username, registryDate);
 
